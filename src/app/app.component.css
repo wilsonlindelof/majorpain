@@ -1,8 +1,29 @@
 html, body{
   height: 100%;
-  font-family: Arial, Helvetica, sans-serif
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #DDDDDD;
 }
 
 a.active {
   background-color: gray;
+}
+
+.nav-div {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-end;
+  background-color: #222222;
+  margin-bottom: 10px;
+}
+
+.main-background {
+  display: flex;
+  justify-content: center;
+  background-color: #00FF00;
+}
+
+.main-window {
+  background-color: #DDDDDD;
+  width: 60%;
 }
