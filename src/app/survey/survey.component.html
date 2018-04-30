@@ -1,1 +1,18 @@
-<p>What up yo</p>
+<div *ngFor="let question of questions | slice:questionIndex:(questionIndex + 1)">
+  {{question.queryText}}
+  <div *ngIf="question.type === 'multipleChoice'">
+    <div *ngFor="let option of question.options;let i = index" (click)="selectAnswer(questionIndex, i)" class="answer-option" [ngClass]="{'answer-selected': option.selected}">
+      {{option.answerText}}
+    </div>
+  </div>
+  <div *ngIf="question.type !== 'multipleChoice'">
+    You haven't made this question type yet dude.
+  </div>
+  <div>
+    <button (click)="backQuestion()">Back</button>
+    <button (click)="forwardQuestion()">Forward</button>
+  </div>
+</div>
+
+Length: {{questions.length}}
+index: {{questionIndex}}

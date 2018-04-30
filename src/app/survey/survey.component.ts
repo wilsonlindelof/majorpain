@@ -6,13 +6,14 @@ import { ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'survey',
-  styles: [`
-  `],
+  styles: [``],
   templateUrl: 'survey.component.html'
 })
 export class SurveyComponent implements OnInit {
 
   public localState: any;
+  public questions = [];
+  public questionIndex = 0;
   constructor(
     public route: ActivatedRoute
   ) {}
@@ -36,6 +37,19 @@ export class SurveyComponent implements OnInit {
      */
     this.asyncDataWithWebpack();
   }
+  public backQuestion() {
+    if (this.questionIndex > 0) {
+      this.questionIndex--;
+    }
+  }
+  public forwardQuestion() {
+    if (this.questionIndex < (this.questions.length - 1)) {
+      this.questionIndex++;
+    }
+  }
+  public selectAnswer(questionIndex, answerIndex) {
+    this.questions[questionIndex].options[answerIndex].selected = !this.questions[questionIndex].options[answerIndex].selected;
+  }
   private asyncDataWithWebpack() {
     /**
      * you can also async load mock data with 'es6-promise-loader'
@@ -48,6 +62,12 @@ export class SurveyComponent implements OnInit {
         .then((json) => {
           console.log('async mockData', json);
           this.localState = json;
+        });
+
+      System.import('../../assets/mock-data/no-branch-questions.json')
+        .then((json) => {
+          console.log('async questions', json);
+          this.questions = json;
         });
 
     });

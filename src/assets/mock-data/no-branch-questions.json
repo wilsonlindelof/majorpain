@@ -4,19 +4,24 @@
     "type": "multipleChoice",
     "options": [
       {
-        "answerText": "Money!"
+        "answerText": "Money!",
+        "selected": false
       },
       {
-        "answerText": "Learning"
+        "answerText": "Learning",
+        "selected": false
       },
       {
-        "answerText": "So I can be able to work at my passion"
+        "answerText": "So I can be able to work at my passion",
+        "selected": false
       },
       {
-        "answerText": "Wait, you mean I don't have to go?"
+        "answerText": "Wait, you mean I don't have to go?",
+        "selected": false
       },
       {
-        "answerText": "Not Sure/Skip"
+        "answerText": "Not Sure/Skip",
+        "selected": false
       }
     ]
   },
@@ -25,19 +30,24 @@
     "type": "multipleChoice",
     "options": [
       {
-        "answerText": "No way! Bachelors and I'm out!"
+        "answerText": "No way! Bachelors and I'm out!",
+        "selected": false
       },
       {
-        "answerText": "Only if it was absolutely required for my field."
+        "answerText": "Only if it was absolutely required for my field.",
+        "selected": false
       },
       {
-        "answerText": "No Preference."
+        "answerText": "No Preference.",
+        "selected": false
       },
       {
-        "answerText": "If it helps me get a better job, why not?"
+        "answerText": "If it helps me get a better job, why not?",
+        "selected": false
       },
       {
-        "answerText": "I really want to go to grad school"
+        "answerText": "I really want to go to grad school",
+        "selected": false
       }
     ]
   },
@@ -46,16 +56,20 @@
     "type": "multipleChoice",
     "options": [
       {
-        "answerText": "Cheapest college wins?"
+        "answerText": "Cheapest college wins?",
+        "selected": false
       },
       {
-        "answerText": "Best value per dollar"
+        "answerText": "Best value per dollar",
+        "selected": false
       },
       {
-        "answerText": "Best overall college (even if its very expensive!)"
+        "answerText": "Best overall college (even if its very expensive!)",
+        "selected": false
       },
       {
-        "answerText": "Not Sure/Skip"
+        "answerText": "Not Sure/Skip",
+        "selected": false
       }
     ]
   }
