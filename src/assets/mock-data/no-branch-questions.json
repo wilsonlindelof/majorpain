@@ -1,0 +1,62 @@
+[
+  {
+    "queryText": "Why do you want to go to college?",
+    "type": "multipleChoice",
+    "options": [
+      {
+        "answerText": "Money!"
+      },
+      {
+        "answerText": "Learning"
+      },
+      {
+        "answerText": "So I can be able to work at my passion"
+      },
+      {
+        "answerText": "Wait, you mean I don't have to go?"
+      },
+      {
+        "answerText": "Not Sure/Skip"
+      }
+    ]
+  },
+  {
+    "queryText": "How do you feel about going to Grad School?",
+    "type": "multipleChoice",
+    "options": [
+      {
+        "answerText": "No way! Bachelors and I'm out!"
+      },
+      {
+        "answerText": "Only if it was absolutely required for my field."
+      },
+      {
+        "answerText": "No Preference."
+      },
+      {
+        "answerText": "If it helps me get a better job, why not?"
+      },
+      {
+        "answerText": "I really want to go to grad school"
+      }
+    ]
+  },
+  {
+    "queryText": "Whats your budget/value preference?",
+    "type": "multipleChoice",
+    "options": [
+      {
+        "answerText": "Cheapest college wins?"
+      },
+      {
+        "answerText": "Best value per dollar"
+      },
+      {
+        "answerText": "Best overall college (even if its very expensive!)"
+      },
+      {
+        "answerText": "Not Sure/Skip"
+      }
+    ]
+  }
+]

@@ -1,0 +1,53 @@
+
+//Question
+{
+  "query": "How do you feel about going to Grad School?",
+  "type": "multipleChoice",
+  "options": [
+    {
+      "text": "No way! Bachelors and I'm out!",
+      "effects": {
+        "gradSchoolPreference": -10,
+        "fasttrackPreference": 5,
+        "salaryPreference": 0,
+        "flexibilityPreference": 0
+      }
+    },
+    {
+      "text": "Only if it was absolutely required for my field.",
+      "effects": {
+        "gradSchoolPreference": -5,
+        "fasttrackPreference": 2,
+        "salaryPreference": 0,
+        "flexibilityPreference": 0
+      }
+    },
+    {
+      "text": "No Preference.",
+      "effects": {
+        "gradSchoolPreference": 0,
+        "fasttrackPreference": 0,
+        "salaryPreference": 0,
+        "flexibilityPreference": 0
+      }
+    },
+    {
+      "text": "If it helps me get a better job, why not?",
+      "effects": {
+        "gradSchoolPreference": 5,
+        "fasttrackPreference": -2,
+        "salaryPreference": 2,
+        "flexibilityPreference": 0
+      }
+    },
+    {
+      "text": "I really want to go to grad school",
+      "effects": {
+        "gradSchoolPreference": 10,
+        "fasttrackPreference": -5,
+        "salaryPreference": 0,
+        "flexibilityPreference": 0
+      }
+    }
+  ]
+}
