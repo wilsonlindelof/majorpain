@@ -18,7 +18,7 @@ import { AppState } from './app.service';
   templateUrl: 'app.component.html'
 })
 export class AppComponent implements OnInit {
-  public name = 'Major Pain App Component';  
+  public name = 'Major Pain App Component';
   public showDevModule: boolean = environment.showDevModule;
 
   constructor(

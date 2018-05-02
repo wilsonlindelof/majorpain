@@ -48,7 +48,14 @@ export class SurveyComponent implements OnInit {
     }
   }
   public selectAnswer(questionIndex, answerIndex) {
-    this.questions[questionIndex].options[answerIndex].selected = !this.questions[questionIndex].options[answerIndex].selected;
+    const selected = !this.questions[questionIndex].options[answerIndex].selected;
+    if (selected) {
+      console.log('selected is true');
+      this.questions[questionIndex].options.forEach((option) => {
+        option.selected = false;
+      });
+    }
+    this.questions[questionIndex].options[answerIndex].selected = selected;
   }
   private asyncDataWithWebpack() {
     /**
