@@ -5,11 +5,11 @@ import {
 import { ActivatedRoute, Router } from '@angular/router';
 
 @Component({
-  selector: 'survey',
+  selector: 'majors',
   styles: [``],
-  templateUrl: 'survey.component.html'
+  templateUrl: 'src/app/majors/majors.component.html'
 })
-export class SurveyComponent implements OnInit {
+export class MajorsComponent implements OnInit {
 
   public localState: any;
   public questions = [];
@@ -29,7 +29,7 @@ export class SurveyComponent implements OnInit {
         this.localState = data.yourData;
       });
 
-    console.log('hello `Survey` component');
+    console.log('hello `Majors` component');
     /**
      * static data that is bundled
      * var mockData = require('assets/mock-data/mock-data.json');
@@ -38,33 +38,7 @@ export class SurveyComponent implements OnInit {
      */
     this.asyncDataWithWebpack();
   }
-  public backQuestion() {
-    if (this.questionIndex > 0) {
-      this.questionIndex--;
-    }
-  }
-  public forwardQuestion() {
-    if (this.questionIndex < (this.questions.length - 1)) {
-      this.questionIndex++;
-    }
-  }
-  public seeResults() {
-    console.log('see results');
-    this.navigate('majors');
-  }
-  public navigate(url: string) {
-    this.router.navigate(['/' + url]);
-  }
-  public selectAnswer(questionIndex, answerIndex) {
-    const selected = !this.questions[questionIndex].options[answerIndex].selected;
-    if (selected) {
-      console.log('selected is true');
-      this.questions[questionIndex].options.forEach((option) => {
-        option.selected = false;
-      });
-    }
-    this.questions[questionIndex].options[answerIndex].selected = selected;
-  }
+
   private asyncDataWithWebpack() {
     /**
      * you can also async load mock data with 'es6-promise-loader'

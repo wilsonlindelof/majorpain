@@ -17,6 +17,7 @@ import { AppState, InternalStateType } from './app.service';
 import { HomeComponent } from './home';
 import { AboutComponent } from './about';
 import { SurveyComponent } from './survey';
+import { MajorsComponent } from './majors';
 import { NoContentComponent } from './no-content';
 import { XLargeDirective } from './home/x-large';
 import { DevModuleModule } from './+dev-module';
@@ -44,7 +45,8 @@ interface StoreType {
   declarations: [
     AppComponent,
     AboutComponent,
-	SurveyComponent,
+    SurveyComponent,
+    MajorsComponent,
     HomeComponent,
     NoContentComponent,
     XLargeDirective

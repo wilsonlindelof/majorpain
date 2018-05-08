@@ -72,5 +72,10 @@
         "selected": false
       }
     ]
+  },
+  {
+    "queryText": "All Done! Ready to see your results?",
+    "type": "results",
+    "options": []
   }
 ]

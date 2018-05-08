@@ -5,11 +5,17 @@
       {{option.answerText}}
     </div>
   </div>
-  <div *ngIf="question.type !== 'multipleChoice'">
+
+  <div *ngIf="question.type === 'results'">
+    <button (click)="seeResults()">See Results</button>
+  </div>
+
+  <div *ngIf="question.type !== 'multipleChoice' && question.type !== 'results'">
     You haven't made this question type yet dude.
   </div>
+
   <div>
     <button (click)="backQuestion()">Back</button>
-    <button (click)="forwardQuestion()">Forward</button>
+    <button *ngIf="question.type !== 'results'" (click)="forwardQuestion()">Forward</button>
   </div>
 </div>
